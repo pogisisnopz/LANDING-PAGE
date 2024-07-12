@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALL OF THE LEGENDS HOMEPAGE</title>
+    <link rel="stylesheet" href="ASSETS/styles.css">
+    <script defer src="ASSETS/scripts.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: #000000;
+            font-family: Arial, sans-serif;
+        }
+        
+        header, .sidebar, footer {
+            background-color: #1c1c1c;
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            transition: text-shadow 0.5s ease-in-out, color 0.5s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700;
+            text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700, 0 0 20px #ffd700;
+        }
+
+        nav ul li a i {
+            transition: text-shadow 0.5s ease-in-out, color 0.5s ease-in-out;
+        }
+
+        nav ul li a:hover i {
+            color: #ffd700;
+            text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700, 0 0 20px #ffd700;
+        }
+        
+        .main-container {
+            display: flex;
+        }
+
+        .sidebar {
+            width: 200px;
+            padding: 20px;
+            background: linear-gradient(45deg, #1c1c1c, #000);
+            box-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 30px #ffd700;
+            transition: box-shadow 0.5s ease-in-out;
+        }
+
+        .sidebar:hover {
+            box-shadow: 0 0 20px #ffd700, 0 0 40px #ffd700, 0 0 60px #ffd700;
+        }
+
+        .sidebar h3, .sidebar ul {
+            text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700, 0 0 20px #ffd700;
+        }
+
+        .sidebar ul li a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            padding: 10px 0;
+        }
+
+        .sidebar ul li a:hover {
+            color: #ffd700;
+            text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700, 0 0 20px #ffd700;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .main-content .section h2 {
+            text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700, 0 0 20px #ffd700;
+        }
+
+        .character-selection img {
+            width: 50px;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .character-selection img:hover {
+            transform: scale(1.2);
+            box-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 30px #ffd700;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700, 0 0 20px #ffd700;
+        }
+
+        .glow {
+            color: #ffd700;
+            text-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 30px #ffd700, 0 0 40px #ffd700;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#Facebook"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                <li><a href="#Instragram"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="#X"><i class="fab fa-twitter"></i> X</a></li>
+                <li><a href="#Discord"><i class="fab fa-discord"></i> Discord</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="main-container">
+        <aside class="sidebar">
+            <img src="ASSETS/COL_white.png" alt="Logo" style="width: 50px; height: auto; margin: 10px;">
+            <h3>Sidebar Menu</h3>
+            <ul>
+                <li><a href="che.html">Home</a></li>
+                <li><a href="1.html">Characters</a></li>
+                <li><a href="2.html">World</a></li>
+                <li><a href="3.html">Gameplay</a></li>
+                <li><a href="4.html">Arsenal</a></li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <section id="homepage" class="section">
+                <h1 class="glow">Welcome to CALL OF THE LEGENDS</h1>
+                <p>BRINGING THE GAME TO EVERYONE'S LIFE.</p>
+                <img src="ASSETS/COL.png" alt="Call of the Legends Logo" style="width: 200px; height: auto;">
+            </section>
+
+        </main>
+    </div>
+
+    <footer>
+        <img src="ASSETS/COL_white.png" alt="Footer Logo" style="width: 50px; height: auto; margin-bottom: 10px;">
+        <p>MISSION GOALS: To create an immersive gaming experience that resonates with players worldwide.</p>
+        <p>&copy; 2024 CALL OF THE LEGENDS. ALL RIGHTS RESERVED.</p>
+        <p>WEB DESIGNER: NAVAREZ, VAN RYAN M.</p>
+        <p>EMAIL: 202310560@fit.edu.ph. LOCATION: METRO MANILA, MANILA CITY, PHILIPPINES 0400</p>
+    </footer>
+    
+</body>
+</html>

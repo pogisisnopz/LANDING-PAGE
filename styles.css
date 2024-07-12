@@ -1,0 +1,185 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #ffffff; /* Fallback color */
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+    color: rgba(255, 255, 255, 0.299);
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.main-container {
+    display: flex;
+    margin-top: 3em; /* Added to accommodate fixed header */
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.sidebar h3 {
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 1em 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 0.5em;
+}
+
+.sidebar ul li a:hover {
+    background-color: #575757;
+}
+
+.main-content {
+    margin-left: 220px; /* Added to accommodate the sidebar */
+    padding: 2em;
+    width: calc(100% - 220px);
+}
+
+.section {
+    padding: 5em 2em;
+    text-align: center;
+    min-height: 100vh; /* Ensure each section covers the full viewport height */
+}
+
+section:nth-child(odd) {
+    background-color: hwb(0 100% 0%);
+}
+
+section:nth-child(even) {
+    background-color: #e2e2e2;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Character Section */
+.character-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.character-main {
+    flex: 1;
+    text-align: center;
+}
+
+.character-main img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.character-info {
+    flex: 2;
+    text-align: left;
+}
+
+.character-info h3 {
+    margin-top: 0;
+}
+
+.character-selection {
+    flex: 1;
+    text-align: center;
+}
+
+.character-selection img {
+    width: 50px;
+    height: 50px;
+    margin: 0.5em;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.character-selection img:hover {
+    transform: scale(1.2);
+}
+
+/* Lighting effect for sidebar */
+.sidebar {
+    background: linear-gradient(45deg, #1c1c1c, #000);
+    box-shadow: 0 0 10px #ffd700, 0 0 20px #ffd700, 0 0 30px #ffd700;
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+.sidebar:hover {
+    box-shadow: 0 0 20px #ffd700, 0 0 40px #ffd700, 0 0 60px #ffd700;
+}
+
+/* Lighting effect for social icons */
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: text-shadow 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+    text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700, 0 0 20px #ffd700;
+}
+
+/* Additional lighting effect for social icons */
+nav ul li a i {
+    transition: text-shadow 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+nav ul li a:hover i {
+    color: #ffd700;
+    text-shadow: 0 0 5px #ffd700, 0 0 10px #ffd700, 0 0 20px #ffd700;
+}
